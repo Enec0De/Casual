@@ -304,5 +304,4 @@ git archive master --prefix='project/' | gzip > `git describe master`.tar.gz
 git archive master --prefix='project/' --format=zip > `git describe master`.zip
 		创建一个最新的快照归档
 
-
 Never End!

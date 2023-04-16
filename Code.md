@@ -3,9 +3,9 @@
 * * * 
 初始化
 ```
-    --bare  
+	--bare  
 		初始化时不创建工作目录 (裸仓库)  
-    --shared  
+	--shared  
 		自动修改该仓库目录的组权限为可写  
 ```
 
@@ -78,7 +78,7 @@
 * * *
 版本提交历史
 ```
-    -p
+	-p
 	--patch	
 		按补丁格式输出
 	--stat
@@ -93,14 +93,14 @@
 		仅显示 SHA-1 校验和所有 40 个字符中的前几个字符
 	--relative-date
 		使用较短的相对时间而不是完整格式显示日期 (比如 "2 weeks ago")
-    --graph
+	--graph
 		在日志旁以 ASCII 图形显示分支与合并历史
 	--oneline
 		--pretty=oneline --abbrev-commit 合用的简写
 	--decorate
 		查看各个分支当前所指的对象
 	--pretty[=<format>]
-        <format> 的可用选项有 oneline, short, full, fuller, format:"…" 等
+		<format> 的可用选项有 oneline, short, full, fuller, format:"…" 等
 ```
 * `git log --pretty=format` 常用的选项 :   
    | 选项 | 说明                                 | 选项 | 说明                    |
@@ -126,9 +126,7 @@
 	--until
 	--before
 		仅显示指定时间之前的提交
-		eg: 2.weeks
-			2008-01-15
-			2 years 1 day 3 minutes ago
+		eg: 2.weeks, 2008-01-15, 2 years 1 day 3 minutes ago
 
 	--author
 		仅显示作者匹配指定字符串的提交。
@@ -389,12 +387,12 @@
 ## 创建一个最新的快照归档
 * * *
 ```
-git archive master --prefix='project/' | gzip > `git describe master`.tar.gz
-git archive master --prefix='project/' --format=zip > `git describe master`.zip
+	git archive master --prefix='project/' | gzip > `git describe master`.tar.gz
+	git archive master --prefix='project/' --format=zip > `git describe master`.zip
 ```
 ## 别名
 * * *
 ```
-git config --global alias.<abbr> <command>		为一个命令设置一个别名
-git config --global alias.<abbr> '!<command>'	为外部命令设置一个别名
+	git config --global alias.<abbr> <command>		为一个命令设置一个别名
+	git config --global alias.<abbr> '!<command>'	为外部命令设置一个别名
 ```

@@ -1,2 +1,13 @@
-#忽略tex文件
-*.tex
+#Ignore LaTeX auxiliary files.
+*.aux
+*.log
+*.synctex.gz
+*.synctex(busy)
+*.toc
+*.pdf
+*.bbl
+*.blg
+
+#Ignore picture.
+*.jpg
+*.png
